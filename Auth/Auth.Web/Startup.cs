@@ -29,19 +29,19 @@ namespace Auth.Web
             services.ConfigureApplicationCookie(cfg =>
             {
                 cfg.Events = new CookieAuthenticationEvents
+                {
+                    OnRedirectToLogin = ctx =>
                     {
-                        OnRedirectToLogin = ctx =>
+                        if (ctx.Request.Path.StartsWithSegments("/api") && ctx.Response.StatusCode == 200)
                         {
-                            if (ctx.Request.Path.StartsWithSegments("/api") && ctx.Response.StatusCode == 200)
-                            {
-                                ctx.Response.StatusCode = 401;
-                                return Task.FromResult<object>(null);
-                            }
-
-                            ctx.Response.Redirect(ctx.RedirectUri);
+                            ctx.Response.StatusCode = 401;
                             return Task.FromResult<object>(null);
                         }
-                    };
+
+                        ctx.Response.Redirect(ctx.RedirectUri);
+                        return Task.FromResult<object>(null);
+                    }
+                };
             });
 
             services.AddMvc();
