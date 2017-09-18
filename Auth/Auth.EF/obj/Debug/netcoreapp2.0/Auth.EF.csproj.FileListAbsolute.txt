@@ -1,0 +1,9 @@
+C:\Users\KV\workspace\aspnetcore-webapi-auth\Auth\Auth.EF\bin\Debug\netcoreapp2.0\Auth.EF.deps.json
+C:\Users\KV\workspace\aspnetcore-webapi-auth\Auth\Auth.EF\bin\Debug\netcoreapp2.0\Auth.EF.dll
+C:\Users\KV\workspace\aspnetcore-webapi-auth\Auth\Auth.EF\bin\Debug\netcoreapp2.0\Auth.EF.pdb
+C:\Users\KV\workspace\aspnetcore-webapi-auth\Auth\Auth.EF\obj\Debug\netcoreapp2.0\Auth.EF.csprojResolveAssemblyReference.cache
+C:\Users\KV\workspace\aspnetcore-webapi-auth\Auth\Auth.EF\obj\Debug\netcoreapp2.0\Auth.EF.csproj.CoreCompileInputs.cache
+C:\Users\KV\workspace\aspnetcore-webapi-auth\Auth\Auth.EF\obj\Debug\netcoreapp2.0\Auth.EF.AssemblyInfoInputs.cache
+C:\Users\KV\workspace\aspnetcore-webapi-auth\Auth\Auth.EF\obj\Debug\netcoreapp2.0\Auth.EF.AssemblyInfo.cs
+C:\Users\KV\workspace\aspnetcore-webapi-auth\Auth\Auth.EF\obj\Debug\netcoreapp2.0\Auth.EF.dll
+C:\Users\KV\workspace\aspnetcore-webapi-auth\Auth\Auth.EF\obj\Debug\netcoreapp2.0\Auth.EF.pdb

@@ -1,0 +1,14 @@
+C:\Users\KV\workspace\aspnetcore-webapi-auth\Auth\Auth.Web\bin\Debug\netcoreapp2.0\Auth.Web.deps.json
+C:\Users\KV\workspace\aspnetcore-webapi-auth\Auth\Auth.Web\bin\Debug\netcoreapp2.0\Auth.Web.runtimeconfig.json
+C:\Users\KV\workspace\aspnetcore-webapi-auth\Auth\Auth.Web\bin\Debug\netcoreapp2.0\Auth.Web.runtimeconfig.dev.json
+C:\Users\KV\workspace\aspnetcore-webapi-auth\Auth\Auth.Web\bin\Debug\netcoreapp2.0\Auth.Web.dll
+C:\Users\KV\workspace\aspnetcore-webapi-auth\Auth\Auth.Web\bin\Debug\netcoreapp2.0\Auth.Web.pdb
+C:\Users\KV\workspace\aspnetcore-webapi-auth\Auth\Auth.Web\bin\Debug\netcoreapp2.0\Auth.EF.dll
+C:\Users\KV\workspace\aspnetcore-webapi-auth\Auth\Auth.Web\bin\Debug\netcoreapp2.0\Auth.EF.pdb
+C:\Users\KV\workspace\aspnetcore-webapi-auth\Auth\Auth.Web\obj\Debug\netcoreapp2.0\Auth.Web.csprojResolveAssemblyReference.cache
+C:\Users\KV\workspace\aspnetcore-webapi-auth\Auth\Auth.Web\obj\Debug\netcoreapp2.0\Auth.Web.csproj.CoreCompileInputs.cache
+C:\Users\KV\workspace\aspnetcore-webapi-auth\Auth\Auth.Web\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Users\KV\workspace\aspnetcore-webapi-auth\Auth\Auth.Web\obj\Debug\netcoreapp2.0\Auth.Web.AssemblyInfoInputs.cache
+C:\Users\KV\workspace\aspnetcore-webapi-auth\Auth\Auth.Web\obj\Debug\netcoreapp2.0\Auth.Web.AssemblyInfo.cs
+C:\Users\KV\workspace\aspnetcore-webapi-auth\Auth\Auth.Web\obj\Debug\netcoreapp2.0\Auth.Web.dll
+C:\Users\KV\workspace\aspnetcore-webapi-auth\Auth\Auth.Web\obj\Debug\netcoreapp2.0\Auth.Web.pdb
