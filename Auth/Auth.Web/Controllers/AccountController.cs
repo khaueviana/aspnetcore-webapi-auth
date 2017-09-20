@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Identity;
 using Auth.EF;
 using Auth.Web.Model;
+using System.Security.Claims;
 
 namespace Auth.Web.Controllers
 {
@@ -29,12 +30,17 @@ namespace Auth.Web.Controllers
             }
 
             var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
+                        
             var result = await _userManager.CreateAsync(user, model.Password);
 
             if (!result.Succeeded)
             {
                 return BadRequest(result.Errors.Select(x => x.Description).ToList());
             }
+
+            await _userManager.AddClaimAsync(user, new Claim("ChicoFeelings", "Get"));
+            await _userManager.AddClaimAsync(user, new Claim("ChicoFeelings", "Create"));
+            await _userManager.AddClaimAsync(user, new Claim("ChicoFeelings", "SudoCreate"));
 
             await _signInManager.SignInAsync(user, false);
 

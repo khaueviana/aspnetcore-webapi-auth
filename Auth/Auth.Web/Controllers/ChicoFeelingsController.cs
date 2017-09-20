@@ -6,7 +6,6 @@ using System.Linq;
 
 namespace Auth.Web.Controllers
 {
-    [Authorize]
     [Route("api/[controller]")]
     public class ChicoFeelingsController : Controller
     {
@@ -16,19 +15,37 @@ namespace Auth.Web.Controllers
           new ChicoFeelingsModel { NomeMusica = "Sinhá", TrechoLetra = "Por que talhar meu corpo eu não olhei Sinhá para que que vosmincê meus olhos vai furar"}
         };
 
-        [HttpGet("get")]     
+        [HttpGet("get")]
+        [Authorize(Policy = "CanChicoFeelingsRead")]
         public List<ChicoFeelingsModel> Get()
         {
             return _data;
         }
 
         [HttpPost("create")]
+        [Authorize(Policy = "CanChicoFeelingsCreate")]
         public IActionResult Create([FromBody]ChicoFeelingsModel chicoFeelingsModel)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState.Values.SelectMany(v => v.Errors).Select(modelError => modelError.ErrorMessage).ToList());
             }
+
+            _data.Add(chicoFeelingsModel);
+
+            return Ok();
+        }
+
+        [HttpPost("sudocreate")]
+        [Authorize(Policy = "CanChicoFeelingsSudoCreate")]
+        public IActionResult SudoCreate([FromBody]ChicoFeelingsModel chicoFeelingsModel)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState.Values.SelectMany(v => v.Errors).Select(modelError => modelError.ErrorMessage).ToList());
+            }
+
+            chicoFeelingsModel.NomeMusica += " SUDO!";
 
             _data.Add(chicoFeelingsModel);
 

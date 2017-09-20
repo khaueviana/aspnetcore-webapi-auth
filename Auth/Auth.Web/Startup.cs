@@ -44,6 +44,13 @@ namespace Auth.Web
                 };
             });
 
+            services.AddAuthorization(options =>
+            {
+                options.AddPolicy("CanChicoFeelingsRead", policy => policy.RequireClaim("ChicoFeelings", "Get"));
+                options.AddPolicy("CanChicoFeelingsCreate", policy => policy.RequireClaim("ChicoFeelings", "Create"));
+                options.AddPolicy("CanChicoFeelingsSudoCreate", policy => policy.RequireClaim("ChicoFeelings", "SudoCreate"));
+            });
+
             services.AddMvc();
         }
 
