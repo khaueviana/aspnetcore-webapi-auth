@@ -14,3 +14,5 @@
 * Update-Database
 * Create a User using api/account/create
 * Consuming data using ChicoFeelings API
+
+**References: https://pioneercode.com/post/authentication-in-a-asp-dot-net-core-api-part-1-identity-access-denied**
