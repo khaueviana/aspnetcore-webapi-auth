@@ -6,6 +6,7 @@
 * Entity Framework 2.0
 * ASP.NET Identity
 * Claim-Based Authorization
+* Tokeb Based Authentication
 
 ## Run
 
