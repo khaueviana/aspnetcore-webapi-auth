@@ -11,7 +11,6 @@
 ## Run
 
 * Get packages with Nuget
-* Add-Migration InitialCreate
 * Update-Database
 * Create a User using api/account/create
 * Login a User using api/account/login
